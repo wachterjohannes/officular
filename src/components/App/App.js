@@ -1,6 +1,8 @@
 import React, { PropTypes } from 'react';
+import withContext from '../../decorators/withContext';
 import './App.scss';
 
+@withContext
 class App {
 
     static propTypes = {

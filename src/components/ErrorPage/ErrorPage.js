@@ -3,8 +3,14 @@ import './ErrorPage.scss';
 
 class ErrorPage {
 
+    static contextTypes = {
+        onSetTitle: PropTypes.func.isRequired,
+        onPageNotFound: PropTypes.func.isRequired
+    };
+
     render() {
         let title = 'Error';
+        this.context.onSetTitle(title);
 
         return (
             <div>

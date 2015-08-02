@@ -1,5 +1,5 @@
 import 'babel/polyfill';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react/lib/ReactDOM';
 import FastClick from 'fastclick';
 import router from './router';
 import Dispatcher from './core/Dispatcher';

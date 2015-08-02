@@ -3,7 +3,7 @@ import _ from 'lodash';
 import fs from 'fs';
 import path from 'path';
 import express from 'express';
-import ReactDOM from 'react-dom/server';
+import ReactDOM from 'react/lib/ReactServerRendering';
 import router from './router';
 
 const server = global.server = express();

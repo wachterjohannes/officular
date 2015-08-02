@@ -3,8 +3,13 @@ import './NotFoundPage.scss';
 
 class NotFoundPage {
 
+    static contextTypes = {
+        onSetTitle: PropTypes.func.isRequired
+    };
+
     render() {
         let title = 'Page Not Found';
+        this.context.onSetTitle(title);
 
         return (
             <div>

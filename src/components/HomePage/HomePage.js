@@ -3,8 +3,13 @@ import './HomePage.scss';
 
 class ErrorPage {
 
+    static contextTypes = {
+        onSetTitle: PropTypes.func.isRequired
+    };
+
     render() {
         let title = 'Home';
+        this.context.onSetTitle(title);
 
         return (
             <div>
